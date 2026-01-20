@@ -14,7 +14,7 @@ app.include_router(root_routes.root_routes)
 app.include_router(auth_routes.auth_router)
 app.include_router(order_routes.order_router)
 
-# para rodar: uvicorn main:app --reload (Cria um servidor local para o arquivo main.py)
+# para rodar: uvicorn app.main:app --reload (Cria um servidor local para o arquivo main.py)
 
 # Rest APIS (CRUD)
 # Get -> leitura/pegar
