@@ -1,0 +1,175 @@
+/* ---------------- RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- BODY ---------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ff6b6b, #f8f9fa);
+    background-size: 400% 400%;
+    animation: gradientMove 20s ease infinite;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------- PARTICLES ---------------- */
+#particles-js {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease forwards;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    animation: fadeInDown 1.2s ease forwards;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.docs-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 14px 28px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+.docs-buttons a:hover {
+    background: #0056b3;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ---------------- SOCIAL ---------------- */
+.social-icons {
+    margin-top: 45px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 8px;
+    padding: 12px 22px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.social-icons a:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+/* ---------------- FEATURES ---------------- */
+.features {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.feature-item {
+    background: rgba(255,255,255,0.95);
+    padding: 25px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.feature-item i {
+    font-size: 1.6rem;
+    color: #ff6b6b;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    margin-top: auto;
+    background: #343a40;
+    color: #fff;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ff6b6b;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.6rem; }
+    .hero p { font-size: 1.2rem; }
+
+    .docs-buttons a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer img {
+        margin-top: 15px;
+    }
+}
