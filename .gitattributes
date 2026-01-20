@@ -1,0 +1,11 @@
+# Força contagem das linguagens
+*.py linguist-detectable=true
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.js linguist-detectable=true
+
+# NÃO ignorar essas pastas
+docs/** linguist-detectable=true
+app/** linguist-detectable=true
+static/** linguist-detectable=true
+templates/** linguist-detectable=true
