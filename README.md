@@ -12,6 +12,14 @@
 API de backend para um sistema de delivery, construída com **FastAPI**, **Python 3** e **SQLAlchemy**.  
 Permite cadastro e autenticação de usuários, criação e gerenciamento de pedidos, e controle de permissões via JWT.
 
+## 📌 GitPage - Delivery API
+
+🌐 [Delivery API - GitPage](https://pablohso.github.io/PabloHSO/)
+
+## 📌 GitPage - Pablo
+
+🌐 [Delivery API - GitPage](https://pablohso.github.io/PabloHSO/)
+
 ---
 
 ## 🚀 Funcionalidades
