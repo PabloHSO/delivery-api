@@ -18,4 +18,5 @@ dist/
 build/
 
 # Database
+*.db
 *.sqlite
