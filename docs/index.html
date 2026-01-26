@@ -2,122 +2,133 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
-    <title>🍔 Delivery System API</title>
+    <title>Delivery System API | Backend Platform</title>
+
+    <!-- SEO -->
+    <meta name="description" content="API de Delivery desenvolvida com FastAPI, JWT, testes automatizados e arquitetura profissional.">
+    <meta name="author" content="Pablo Henrique Silveira">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- CSS Local -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Particles.js -->
+    <!-- Particles -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-    <!-- Background particles -->
-    <div id="particles-js"></div>
+<div id="particles-js"></div>
 
-    <!-- HEADER / HERO -->
-    <header class="hero">
-        <h1>🍔 Delivery System API</h1>
-        <p>Bem-vindo(a) à API de delivery</p>
+<!-- HERO -->
+<header class="hero">
+    <span class="badge">Backend API Platform</span>
 
-        <div class="docs-buttons">
-            <a href="https://github.com/PabloHSO/delivery-api#readme" target="_blank">
-                📘 Documentação
-            </a>
-            
-            <a href="https://github.com/PabloHSO/delivery-api/tree/main/tests" target="_blank">
-                🧪 Testes
-            </a>
-        </div>
+    <h1>🍔 Delivery System API</h1>
 
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/pablohsilveira" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/PabloHSO/delivery-api" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-        </div>
-    </header>
+    <p>
+        API REST profissional para sistemas de delivery.
+        <br>
+        Construída com <strong>FastAPI</strong>, autenticação <strong>JWT</strong>,
+        testes automatizados e boas práticas de arquitetura.
+    </p>
 
-    <!-- FEATURES -->
-    <section class="features">
-        <div class="feature-item">
+    <div class="cta-buttons">
+        <a href="https://github.com/PabloHSO/delivery-api#readme" target="_blank">
+            <i class="fas fa-book"></i> Documentação
+        </a>
+        <a href="https://github.com/PabloHSO/delivery-api" target="_blank">
+            <i class="fab fa-github"></i> Código Fonte
+        </a>
+    </div>
+
+    <div class="tech-icons">
+        <i class="fab fa-python" title="Python"></i>
+        <i class="fas fa-bolt" title="FastAPI"></i>
+        <i class="fas fa-shield-alt" title="JWT"></i>
+        <i class="fas fa-vial" title="Pytest"></i>
+        <i class="fab fa-docker" title="Docker"></i>
+    </div>
+</header>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>🚀 Funcionalidades</h2>
+
+    <div class="features-grid">
+        <div class="feature-card">
             <i class="fas fa-user-check"></i>
-            Cadastro e autenticação de usuários
+            <h3>Autenticação</h3>
+            <p>Cadastro e login de usuários com autenticação JWT segura.</p>
         </div>
 
-        <div class="feature-item">
+        <div class="feature-card">
             <i class="fas fa-receipt"></i>
-            Criação, atualização e cancelamento de pedidos
+            <h3>Pedidos</h3>
+            <p>Criação, atualização, listagem e cancelamento de pedidos.</p>
         </div>
 
-        <div class="feature-item">
+        <div class="feature-card">
             <i class="fas fa-plus-square"></i>
-            Adição e remoção de itens do pedido
+            <h3>Itens</h3>
+            <p>Gerenciamento completo de itens dentro do pedido.</p>
         </div>
 
-        <div class="feature-item">
+        <div class="feature-card">
             <i class="fas fa-lock"></i>
-            Endpoints protegidos por JWT
+            <h3>Segurança</h3>
+            <p>Endpoints protegidos e controle de acesso por usuário.</p>
         </div>
 
-        <div class="feature-item">
+        <div class="feature-card">
             <i class="fas fa-vial"></i>
-            Testes unitários com Pytest e cobertura completa
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-text">
-            Desenvolvido por <strong>Pablo Henrique Silveira</strong> &copy; 2026
+            <h3>Testes</h3>
+            <p>Testes unitários e integração com cobertura de código.</p>
         </div>
 
-        <img src="images/eu6.jpg" alt="Foto de Pablo">
-    </footer>
+        <div class="feature-card">
+            <i class="fas fa-cubes"></i>
+            <h3>Arquitetura</h3>
+            <p>Separação clara entre rotas, serviços e domínio.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Particles config -->
-    <script>
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#ffffff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5, random: true },
-                size: { value: 3, random: true },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#ffffff",
-                    opacity: 0.2,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    random: true,
-                    out_mode: "out"
-                }
-            },
-            interactivity: {
-                events: {
-                    onhover: { enable: true, mode: "repulse" },
-                    onclick: { enable: true, mode: "push" }
-                },
-                modes: {
-                    repulse: { distance: 100 },
-                    push: { particles_nb: 4 }
-                }
-            },
-            retina_detect: true
-        });
-    </script>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-info">
+        <h3>Pablo Henrique Silveira</h3>
+        <p>Backend Engineer</p>
+
+        <div class="social">
+            <a href="https://www.linkedin.com/in/pablohsilveira" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/PabloHSO" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <img src="images/eu6.jpg" alt="Foto de Pablo">
+</footer>
+
+<!-- Particles config -->
+<script>
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 70 },
+        color: { value: "#ffffff" },
+        size: { value: 3 },
+        move: { speed: 1.6 },
+        line_linked: { enable: true, opacity: 0.15 }
+    }
+});
+</script>
+
 </body>
 </html>
