@@ -14,9 +14,8 @@ Permite cadastro e autenticação de usuários, criação e gerenciamento de ped
 
 ## 📌 GitPage - Delivery API
 
-🌐 [Delivery API - GitPage](https://pablohso.github.io/PabloHSO/)
-
-🌐 [Pablo - GitPage](https://pablohso.github.io/PabloHSO/)
+- 🌐 [Delivery API - GitPage](https://pablohso.github.io/delivery-api/)
+- 🌐 [Pablo - GitPage](https://pablohso.github.io/PabloHSO/)
 
 ---
 
