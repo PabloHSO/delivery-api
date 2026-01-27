@@ -1,4 +1,15 @@
-# 🍔 Delivery System API
+<p align="center">
+  <img src="docs/images/banner3.png" alt="DuckDB Analytics API Banner" width="100%">
+</p>
+
+<h3 align="center">🍔 Delivery System API</h3>
+
+<p align="center">
+  <b>API de backend para um sistema de delivery, construída com **FastAPI**, **Python 3** e **SQLAlchemy**. </b><br>
+  Permite cadastro e autenticação de usuários, criação e gerenciamento de pedidos, e controle de permissões via JWT.
+</p>
+
+
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-green)
@@ -8,9 +19,6 @@
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-green)
-
-API de backend para um sistema de delivery, construída com **FastAPI**, **Python 3** e **SQLAlchemy**.  
-Permite cadastro e autenticação de usuários, criação e gerenciamento de pedidos, e controle de permissões via JWT.
 
 ## 📌 GitPage - Delivery API
 
@@ -33,15 +41,52 @@ Permite cadastro e autenticação de usuários, criação e gerenciamento de ped
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🏗️ Arquitetura
 
-- **Python 3.10+**
-- **FastAPI** – Framework moderno para APIs
-- **SQLAlchemy** – ORM para gerenciamento de banco de dados
-- **SQLite / PostgreSQL** – Banco de dados relacional
-- **Pytest** – Testes unitários e de integração
-- **Bcrypt** – Hash seguro de senhas
-- **JWT (JOSE)** – Autenticação via tokens
+```text
+Client
+  │
+  ▼
+FastAPI
+  │
+  ├── Routers (Auth, Orders)
+  │
+  ├── Services (Business Logic)
+  │
+  ├── Models (SQLAlchemy)
+  │
+  └── Database (SQLite / PostgreSQL)
+```
+
+A separação entre rotas, serviços e modelos facilita manutenção, testes e evolução do sistema.
+ 
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+**Backend**
+- Python 3.10+
+- FastAPI
+- SQLAlchemy
+- Uvicorn
+
+**Segurança**
+- JWT (JOSE)
+- Bcrypt para hash de senhas
+
+**Banco de Dados**
+- SQLite
+- PostgreSQL
+
+**Testes & Qualidade**
+- Pytest
+- pytest-cov
+- Testes unitários
+- Testes de integração
+
+**DevOps**
+- GitHub Actions (CI)
+- Pipeline automatizado de testes
 
 ---
 
@@ -257,3 +302,12 @@ delivery-api/
  - Senhas armazenadas de forma segura com Bcrypt
  - Tokens JWT para autenticação de rotas protegidas
  - Pode ser usado localmente ou configurado para PostgreSQL/SQLite em produção
+
+---
+
+## 👤 Autor
+
+- **Pablo Henrique Silveira**
+
+- GitHub: https://github.com/PabloHSO
+- LinkedIn: https://linkedin.com/in/pablohsilveira
