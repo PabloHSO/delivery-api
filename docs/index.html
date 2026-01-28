@@ -5,43 +5,46 @@
     <title>Delivery System API | Backend Platform</title>
 
     <!-- SEO -->
-    <meta name="description" content="API de Delivery desenvolvida com FastAPI, JWT, testes automatizados e arquitetura profissional.">
+    <meta name="description" content="API de Delivery profissional com FastAPI, JWT, testes automatizados e arquitetura limpa.">
     <meta name="author" content="Pablo Henrique Silveira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Particles -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Vanta -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 </head>
 
 <body>
-<div id="particles-js"></div>
+
+<div id="vanta-bg"></div>
 
 <!-- HERO -->
 <header class="hero">
     <span class="badge">Backend API Platform</span>
 
-    <h1>🍔 Delivery System API</h1>
+    <h1>Delivery System API</h1>
 
     <p>
-        API REST profissional para sistemas de delivery.
-        <br>
-        Construída com <strong>FastAPI</strong>, autenticação <strong>JWT</strong>,
-        testes automatizados e boas práticas de arquitetura.
+        API REST profissional para sistemas de delivery,
+        desenvolvida com <strong>FastAPI</strong>,
+        autenticação <strong>JWT</strong>,
+        testes automatizados e arquitetura limpa.
     </p>
 
     <div class="cta-buttons">
         <a href="https://github.com/PabloHSO/delivery-api#readme" target="_blank">
             <i class="fas fa-book"></i> Documentação
         </a>
-        <a href="https://github.com/PabloHSO/delivery-api" target="_blank">
+        <a href="https://github.com/PabloHSO/delivery-api" target="_blank" class="secondary">
             <i class="fab fa-github"></i> Código Fonte
         </a>
     </div>
@@ -56,43 +59,43 @@
 
 <!-- FEATURES -->
 <section class="features">
-    <h2>🚀 Funcionalidades</h2>
+    <h2>O que este projeto demonstra</h2>
 
     <div class="features-grid">
         <div class="feature-card">
             <i class="fas fa-user-check"></i>
-            <h3>Autenticação</h3>
-            <p>Cadastro e login de usuários com autenticação JWT segura.</p>
+            <h3>Autenticação Segura</h3>
+            <p>Fluxo completo de autenticação com JWT e controle de acesso por usuário.</p>
         </div>
 
         <div class="feature-card">
             <i class="fas fa-receipt"></i>
-            <h3>Pedidos</h3>
+            <h3>Gestão de Pedidos</h3>
             <p>Criação, atualização, listagem e cancelamento de pedidos.</p>
         </div>
 
         <div class="feature-card">
-            <i class="fas fa-plus-square"></i>
-            <h3>Itens</h3>
-            <p>Gerenciamento completo de itens dentro do pedido.</p>
+            <i class="fas fa-box-open"></i>
+            <h3>Itens & Produtos</h3>
+            <p>Gerenciamento completo dos itens associados aos pedidos.</p>
         </div>
 
         <div class="feature-card">
             <i class="fas fa-lock"></i>
             <h3>Segurança</h3>
-            <p>Endpoints protegidos e controle de acesso por usuário.</p>
+            <p>Endpoints protegidos, validação de dados e boas práticas REST.</p>
         </div>
 
         <div class="feature-card">
             <i class="fas fa-vial"></i>
-            <h3>Testes</h3>
-            <p>Testes unitários e integração com cobertura de código.</p>
+            <h3>Testes Automatizados</h3>
+            <p>Testes unitários e de integração com Pytest.</p>
         </div>
 
         <div class="feature-card">
             <i class="fas fa-cubes"></i>
-            <h3>Arquitetura</h3>
-            <p>Separação clara entre rotas, serviços e domínio.</p>
+            <h3>Arquitetura Limpa</h3>
+            <p>Separação clara entre camadas de API, Services e Domain.</p>
         </div>
     </div>
 </section>
@@ -116,18 +119,27 @@
     <img src="images/eu6.jpg" alt="Foto de Pablo">
 </footer>
 
-<!-- Particles config -->
+<script src="js/animations.js"></script>
+
+<!-- VANTA CONFIG -->
 <script>
-particlesJS("particles-js", {
-    particles: {
-        number: { value: 70 },
-        color: { value: "#ffffff" },
-        size: { value: 3 },
-        move: { speed: 1.6 },
-        line_linked: { enable: true, opacity: 0.15 }
-    }
+VANTA.FOG({
+  el: "#vanta-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0xff7a18,
+  midtoneColor: 0x2c2c54,
+  lowlightColor: 0x0b0f2b,
+  baseColor: 0x0b1020,
+  blurFactor: 0.6,
+  speed: 1.1,
+  zoom: 1.1
 });
 </script>
+
 
 </body>
 </html>

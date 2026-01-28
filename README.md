@@ -9,7 +9,7 @@
   Permite cadastro e autenticação de usuários, criação e gerenciamento de pedidos, e controle de permissões via JWT.
 </p>
 
-
+## 📌 Badges
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-green)
@@ -19,6 +19,8 @@
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-green)
+
+---
 
 ## 📌 GitPage - Delivery API
 
